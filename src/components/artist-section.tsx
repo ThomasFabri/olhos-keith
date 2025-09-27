@@ -32,7 +32,7 @@ export default function ArtistSection() {
 
             {/* Parágrafo */}
             <p className="text-lg md:text-xl font-wide text-gray-700 leading-relaxed px-4 md:px-0">
-              "Sou Keith Nunes, artista e professor, já ajudei milhares de alunos
+              &quot;Sou Keith Nunes, artista e professor, já ajudei milhares de alunos
               no Brasil e no exterior a <span className="font-bold">destravar</span> no desenho e transformar seus
               traços em realismo. Criei esse <span className="font-bold">desafio</span> para <span className="font-bold">você</span> que sempre sonhou
               em desenhar olhos mas acha que não tem dom.
@@ -40,7 +40,7 @@ export default function ArtistSection() {
 
             {/* Frase em destaque */}
             <p className="text-lg md:text-xl font-wide text-[#63615f] font-semibold leading-snug">
-              Desenhar é método e esse <br /> método está ao seu alcance."
+              Desenhar é método e esse <br /> método está ao seu alcance.&quot;
             </p>
           </div>
         </FadeInWhenVisible>
