@@ -8,9 +8,12 @@ const checkoutUrl = 'https://pay.hotmart.com/L102106228U?checkoutMode=10' // Def
 
 export default function FinalSection() {
   const handleCTAClickAndNavigate = () => {
-    fbEvent('Lead')
-    window.location.href = checkoutUrl // Programmatic navigation
-  }
+    fbEvent('Lead');
+    setTimeout(() => {
+      window.location.href = checkoutUrl;
+    }, 300); // espera 300ms antes de sair
+  };
+
 
   return (
     <section className="py-16 bg-[#fdfdf9]">
@@ -62,24 +65,23 @@ export default function FinalSection() {
         {/* Right side - Eye illustration */}
         <div className="hidden lg:block lg:col-span-2 w-full h-full">
           <img
-                src="/images/esquerdo.jpeg"
-                alt="Ilustração realista de um olho humano"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+            src="/images/esquerdo.jpeg"
+            alt="Ilustração realista de um olho humano"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
 
-          {/* CTA Button */}
-          <div className="text-center mt-12 md:mt-0 px-4">
-            <Button
-              size="lg"
-              className="bg-[#00687a] hover:bg-teal-700 text-white px-8 py-3 text-xl font-bold rounded-lg w-full md:w-auto"
-              onClick={handleCTAClickAndNavigate} // Add onClick directly to Button
-            >
-              Começar hoje
-            </Button>
-          </div>
-        </section>
-      )
-    }
-    
+      {/* CTA Button */}
+      <div className="text-center mt-12 md:mt-0 px-4">
+        <Button
+          size="lg"
+          className="bg-[#00687a] hover:bg-teal-700 text-white px-8 py-3 text-xl font-bold rounded-lg w-full md:w-auto"
+          onClick={handleCTAClickAndNavigate} // Add onClick directly to Button
+        >
+          Começar hoje
+        </Button>
+      </div>
+    </section>
+  )
+}

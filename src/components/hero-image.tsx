@@ -10,8 +10,11 @@ const checkoutUrl = 'https://pay.hotmart.com/L102106228U?checkoutMode=10' // Def
 export default function HeroImage() {
   const handleCTAClickAndNavigate = () => {
     fbEvent('Lead');
-    window.location.href = checkoutUrl // Programmatic navigation
+    setTimeout(() => {
+      window.location.href = checkoutUrl;
+    }, 300); // espera 300ms antes de sair
   };
+
 
   return (
     <section className="w-full py-16 bg-[#fdfcf8]">

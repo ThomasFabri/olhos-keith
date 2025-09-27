@@ -8,10 +8,13 @@ import { event as fbEvent } from "@/lib/fbpixel";
 const checkoutUrl = 'https://pay.hotmart.com/L102106228U?checkoutMode=10' // Define checkoutUrl here
 
 export default function ChallengeSection() {
-  const handleCTAClickAndNavigate = () => { // Renamed function
+  const handleCTAClickAndNavigate = () => {
     fbEvent('Lead');
-    window.location.href = checkoutUrl // Programmatic navigation
+    setTimeout(() => {
+      window.location.href = checkoutUrl;
+    }, 300); // espera 300ms antes de sair
   };
+
 
   return (
     <section className="w-full pt-12 overflow-x-hidden">
