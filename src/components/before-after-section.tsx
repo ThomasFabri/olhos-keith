@@ -50,7 +50,7 @@ export default function BeforeAfterSection() {
       <div className="w-full max-w-4xl flex flex-col md:flex-row items-center justify-center gap-8">
         {/* Card */}
         <div className="bg-[#258a9c] p-8 rounded-xl shadow-lg text-center order-2 md:order-1">
-          <p className="font-wide font-bold italic text-white text-lg md:text-xl leading-snug">
+          <p className="font-wide font-bold italic text-white text-lg md:text-xl leading-snug px-4">
             &quot;Esse foi o primeiro desenho que tive coragem de mostrar para a minha família&quot;
           </p>
           <span className="mt-4 font-semibold text-white italic block">
