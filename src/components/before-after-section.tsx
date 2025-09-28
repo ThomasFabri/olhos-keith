@@ -63,17 +63,18 @@ export default function BeforeAfterSection() {
           <Image
             src="/images/gabi.jpg"
             alt="Imagem"
-            width={180}
-            height={180}
+            width={250} // Increased size
+            height={250} // Increased size
             className="rounded-xl object-cover"
           />
           {/* Medalha sobreposta */}
-          <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-white rounded-full flex items-center justify-center">
+          <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-white rounded-full flex items-center justify-center"> {/* Increased background size */}
             <Image
               src="/images/2.png"
               alt="Medalha"
-              width={40}
-              height={40}
+              width={40} // Adjusted size to fit new background
+              height={40} // Adjusted size to fit new background
+              style={{ transform: 'rotate(-30deg)' }} // Added rotation
             />
           </div>
         </div>
