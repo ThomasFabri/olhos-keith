@@ -21,7 +21,7 @@ export default function FinalSection() {
         {/* Left side - Questions */}
         <div className="lg:col-span-3 space-y-8 px-4 lg:px-16">
           {/* Question 1 */}
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-6">
             <div className="flex-shrink-0">
               <TrendingUp className="w-6 h-6 text-teal-600" />
             </div>
@@ -35,7 +35,7 @@ export default function FinalSection() {
           </div>
 
           {/* Question 2 */}
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-6">
             <div className="flex-shrink-0">
               <Award className="w-6 h-6 text-teal-600" />
             </div>
@@ -48,7 +48,7 @@ export default function FinalSection() {
           </div>
 
           {/* Question 3 */}
-          <div className="flex items-start gap-4">
+          <div className="flex items-start gap-6">
             <div className="flex-shrink-0">
               <Clock className="w-6 h-6 text-teal-600" />
             </div>
